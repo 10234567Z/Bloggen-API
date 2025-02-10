@@ -18,6 +18,6 @@ app.use(express.json())
 app.use("/gen", generateBlog);
 
 
-app.listen(8080, () => console.log("app listening!"));
+app.listen(3000, () => console.log("app listening!"));
 
 module.exports = app
