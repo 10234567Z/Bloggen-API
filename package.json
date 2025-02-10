@@ -2,9 +2,9 @@
   "name": "blog-be",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon --env-file=.env app.js",
+    "build": "nodemon --env-file=.env ./api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,5 +19,8 @@
     "express-async-handler": "^1.2.0",
     "express-session": "^1.18.1",
     "express-validator": "^7.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }

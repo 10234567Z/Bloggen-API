@@ -18,7 +18,7 @@ async function generateResponse(prompt) {
     },
     method: "POST",
     body: JSON.stringify({
-      inputs: `Write a blog post for Dev.to titled '${prompt}'. Format it according to Dev.to's markdown structure, ensuring the content flows well with appropriate headings, bullet points. Include placeholder descriptions for images (without adding more than 10) so they can be added later. The images should be naturally integrated within the content, not in the title. Keep it engaging, non-spammy, and well-structured for readability. Dont put any other placeholders other than images, also they should be in the format [Image: placeholder], dont ever forget this, it is important.`,
+      inputs: `Write a blog post for Dev.to titled '${prompt}' using proper markdown formatting. Ensure the content flows well with appropriate headings and bullet points. Include up to 8 placeholder descriptions for images in the format [Image: placeholder], naturally integrating them into the content without making it look spammy. Do not use any other placeholders. Keep the writing engaging, structured for readability, and non-spammy.`,
     }),
   });
 
